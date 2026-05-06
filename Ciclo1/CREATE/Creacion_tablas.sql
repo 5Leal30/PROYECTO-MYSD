@@ -73,9 +73,7 @@ CREATE TABLE Importaciones (
     puertoLlegada VARCHAR(100),
     nombreBuqueAvion VARCHAR(100),
     numeroContenedor VARCHAR(50),
-    estadoImportacion VARCHAR(50),
-    idTramite VARCHAR(9),
-    idAuto VARCHAR(9)
+    estadoImportacion VARCHAR(50)
 );
 
 CREATE TABLE Automoviles (
