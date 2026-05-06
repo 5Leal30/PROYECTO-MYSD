@@ -48,7 +48,10 @@ CREATE TABLE Homologaciones (
 
 CREATE TABLE Compras (
     idCompra VARCHAR(9) NOT NULL,
+    idProveedor VARCHAR(9) NOT NULL,
     idComprador VARCHAR(9) NOT NULL,
+    idPedido VARCHAR(9),
+    idPieza VARCHAR(9),
     fechaCompra DATE NOT NULL,
     precioCompra NUMBER(15,2),
     formaPago VARCHAR(20) NOT NULL,
