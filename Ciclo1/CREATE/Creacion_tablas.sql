@@ -19,8 +19,7 @@ CREATE TABLE Vendedores (
     idPersona VARCHAR(9) NOT NULL,
     esConcecionario VARCHAR(2) NOT NULL,
     nombreConcecionario VARCHAR(200),
-    documentosPropiedad VARCHAR(500) NOT NULL,
-    idAutomovil VARCHAR(9)
+    documentosPropiedad VARCHAR(500) NOT NULL
 );
 
 CREATE TABLE Talleres (
