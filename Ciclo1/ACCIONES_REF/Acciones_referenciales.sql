@@ -4,6 +4,8 @@ ALTER TABLE Pedidos ADD CONSTRAINT fk_pedidos_proveedor FOREIGN KEY (idProveedor
 ALTER TABLE TramitesAduanas ADD CONSTRAINT fk_tramites_importacion FOREIGN KEY (idImportacion) REFERENCES Importaciones(idImportacion) ON DELETE CASCADE;
 ALTER TABLE TramitesAduanas ADD CONSTRAINT fk_tramites_pedido FOREIGN KEY (idPedido) REFERENCES Pedidos(idPedido) ON DELETE CASCADE;
 ALTER TABLE Inventarios ADD CONSTRAINT fk_inventarios_taller FOREIGN KEY (idTaller) REFERENCES Talleres(idTaller) ON DELETE CASCADE;
+ALTER TABLE Contienen ADD CONSTRAINT fk_contienen_pieza FOREIGN KEY (idPieza) REFERENCES Piezas(idPieza) ON DELETE CASCADE;
+ALTER TABLE Contienen ADD CONSTRAINT fk_contienen_pedido FOREIGN KEY (idPedido) REFERENCES Pedidos(idPedido) ON DELETE CASCADE;
 
 --Restricciones de Tuplas
 
