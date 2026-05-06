@@ -5,4 +5,7 @@ ALTER TABLE Proveedores ADD CONSTRAINT uk_proveedor_telefono UNIQUE (telefono);
 ALTER TABLE Proveedores ADD CONSTRAINT uk_proveedor_email UNIQUE (email);
 ALTER TABLE Importaciones ADD CONSTRAINT uk_importacion UNIQUE (numeroContenedor);
 ALTER TABLE Personas ADD CONSTRAINT uk_numeroIdentificacion UNIQUE (numeroIdentificacion);
+ALTER TABLE Personas ADD CONSTRAINT uk_persona_telefono UNIQUE (telefono);
 ALTER TABLE Piezas ADD CONSTRAINT uk_codigoFabrica UNIQUE (codigoFabrica);
+ALTER TABLE Talleres ADD CONSTRAINT uk_taller_telefono UNIQUE (telefono);
+ALTER TABLE Talleres ADD CONSTRAINT uk_taller_direccion UNIQUE (direccion);
