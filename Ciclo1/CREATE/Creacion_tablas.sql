@@ -159,9 +159,6 @@ CREATE TABLE Inventarios (
     cantidadDisponible NUMBER NOT NULL,
     ubicacionSeccionPieza VARCHAR(100) NOT NULL,
     ultimaFechaActualizacion DATE NOT NULL,
-    Testante VARCHAR(10),
-    TidPieza VARCHAR(9),
-    TidBodega VARCHAR(9)
 );
 
 CREATE TABLE HistorialMantenimientos (
