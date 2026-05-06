@@ -95,8 +95,7 @@ CREATE TABLE Automoviles (
     motor VARCHAR(100) NOT NULL,
     modificaciones VARCHAR(500) NOT NULL,
     facturaAutomovil VARCHAR(200) NOT NULL,
-    garantiaAutomovil VARCHAR(20) NOT NULL,
-    fechaLlegada DATE NOT NULL
+    garantiaAutomovil VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Proveedores (
