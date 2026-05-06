@@ -40,7 +40,10 @@ CREATE TABLE Homologaciones (
     idAuto VARCHAR(9) NOT NULL,
     fechaHomologaciones DATE NOT NULL,
     entidadHomologadora VARCHAR(100) NOT NULL,
-    certificado VARCHAR(200) NOT NULL
+    certificado VARCHAR(200) NOT NULL,
+    fechaSolicitud DATE NOT NULL,
+    fechaAprobacion DATE NOT NULL,
+    fechaVigenciaHasta DATE NOT NULL
 );
 
 CREATE TABLE Compras (
