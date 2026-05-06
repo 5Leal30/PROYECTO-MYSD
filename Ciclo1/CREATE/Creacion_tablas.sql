@@ -30,9 +30,7 @@ CREATE TABLE Talleres (
     direccion VARCHAR(200) NOT NULL,
     telefono VARCHAR(20) NOT NULL,
     encargado VARCHAR(100) NOT NULL,
-    especialidad VARCHAR(200) NOT NULL,
-    idPieza VARCHAR(9),
-    idBodega VARCHAR(9)
+    especialidad VARCHAR(200) NOT NULL
 );
 
 CREATE TABLE Homologaciones (
