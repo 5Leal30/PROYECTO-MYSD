@@ -12,8 +12,7 @@ CREATE TABLE Personas (
 
 CREATE TABLE Compradores (
     idPersona VARCHAR(9) NOT NULL,
-    facturaDeCompra VARCHAR(500),
-    idCompra VARCHAR(9)
+    facturaDeCompra VARCHAR(500)
 );
 
 CREATE TABLE Vendedores (
