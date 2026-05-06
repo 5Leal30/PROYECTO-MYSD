@@ -109,16 +109,12 @@ CREATE TABLE Proveedores (
     direccion VARCHAR(200) NOT NULL,
     tipoProveedor VARCHAR(50) NOT NULL,
     calificacion NUMBER(2,1) NOT NULL,
-    fechaRegistro DATE NOT NULL,
-    idPedido VARCHAR(9),
-    idPieza VARCHAR(9),
-    idCompra VARCHAR(9)
+    fechaRegistro DATE NOT NULL
 );
 
 CREATE TABLE Pedidos (
     idPedido VARCHAR(9) NOT NULL,
     idProveedor VARCHAR(9) NOT NULL,
-    idComprador VARCHAR(9) NOT NULL,
     fechaPedido DATE NOT NULL,
     fechaEntregaEstimada DATE NOT NULL,
     estadoPedido VARCHAR(50) NOT NULL,
@@ -126,11 +122,12 @@ CREATE TABLE Pedidos (
     descripcionPedido VARCHAR(500) NOT NULL,
     documentosAsociados VARCHAR2(500) NOT NULL,
     costoEnvio NUMBER(15,2),
-    idTramite VARCHAR(9)
 );
 
 CREATE TABLE TramitesAduanas (
     idTramite VARCHAR(9) NOT NULL,
+    idImportacion VARCHAR(9) NOT NULL,
+    idPedido VARCHAR(9) NOT NULL,
     fechaInicio DATE NOT NULL,
     fechaFin DATE NOT NULL,
     estado VARCHAR(50) NOT NULL,
