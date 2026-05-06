@@ -140,6 +140,8 @@ CREATE TABLE TramitesAduanas (
 
 CREATE TABLE Piezas (
     idPieza VARCHAR(9) NOT NULL,
+    idProveedor VARCHAR(9) NOT NULL,
+    idCompra VARCHAR(9) NOT NULL,
     nombrePieza VARCHAR(100) NOT NULL,
     descripcion VARCHAR(500) NOT NULL,
     fabricadorPieza VARCHAR(100) NOT NULL,
@@ -149,7 +151,6 @@ CREATE TABLE Piezas (
     cantidadDePiezas NUMBER NOT NULL,
     garantiaPieza VARCHAR(20) NOT NULL,
     codigoFabrica VARCHAR(100),
-    idAuto VARCHAR(9)
 );
 
 CREATE TABLE Inventarios (
