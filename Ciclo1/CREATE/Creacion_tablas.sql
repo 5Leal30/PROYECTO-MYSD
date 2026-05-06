@@ -119,7 +119,7 @@ CREATE TABLE Pedidos (
     montoPedido NUMBER(15,2) NOT NULL,
     descripcionPedido VARCHAR(500) NOT NULL,
     documentosAsociados VARCHAR2(500) NOT NULL,
-    costoEnvio NUMBER(15,2),
+    costoEnvio NUMBER(15,2)
 );
 
 CREATE TABLE TramitesAduanas (
