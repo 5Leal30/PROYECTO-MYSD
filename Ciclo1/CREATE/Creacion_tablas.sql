@@ -145,7 +145,7 @@ CREATE TABLE Piezas (
     estadoDePieza VARCHAR2(30) NOT NULL,
     cantidadDePiezas NUMBER NOT NULL,
     garantiaPieza VARCHAR(20) NOT NULL,
-    codigoFabrica VARCHAR(100),
+    codigoFabrica VARCHAR(100)
 );
 
 CREATE TABLE Inventarios (
