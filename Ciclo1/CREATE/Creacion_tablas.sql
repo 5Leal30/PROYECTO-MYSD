@@ -79,8 +79,8 @@ CREATE TABLE Importaciones (
 CREATE TABLE Automoviles (
     idAutomovil VARCHAR(9) NOT NULL,
     idVendedor VARCHAR(9) NOT NULL,
-    idComprador VARCHAR(9) NOT NULL,
     idImportacion VARCHAR(9) NOT NULL,
+    idPieza VARCHAR(9) NOT NULL,
     marca VARCHAR(50) NOT NULL,
     modelo VARCHAR(50) NOT NULL,
     año NUMBER(4) NOT NULL,
