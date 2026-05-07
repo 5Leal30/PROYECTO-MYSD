@@ -20,7 +20,7 @@ ALTER TABLE Automoviles ADD CONSTRAINT chk_garantiaAutomovil CHECK (REGEXP_LIKE(
 ALTER TABLE Proveedores ADD CONSTRAINT chk_calificacion CHECK (calificacion BETWEEN 0 AND 5);
 ALTER TABLE Proveedores ADD CONSTRAINT chk_idProveedor CHECK (REGEXP_LIKE(idProveedor, '^PRO-[0-9]{5}$'));
 ALTER TABLE Pedidos ADD CONSTRAINT chk_idPedido CHECK (REGEXP_LIKE(idPedido, '^PED-[0-9]{5}$'));
-ALTER TABLE Pedidos ADD CONSTRAINT chk_idTramitePedido CHECK (REGEXP_LIKE(idTramite, '^TRA-[0-9]{5}$'));
+ALTER TABLE Pedidos ADD CONSTRAINT chk_pedidos_estado CHECK (estadoPedido IN ('retrasado', 'entregado', 'saliendo', 'en camino'));
 ALTER TABLE TramitesAduanas ADD CONSTRAINT chk_idTramite CHECK (REGEXP_LIKE(idTramite, '^TRA-[0-9]{5}$'));
 ALTER TABLE Piezas ADD CONSTRAINT chk_idPieza CHECK (REGEXP_LIKE(idPieza, '^PIE-[0-9]{5}$'));
 ALTER TABLE Piezas ADD CONSTRAINT chk_garantiaPieza CHECK (REGEXP_LIKE(garantiaPieza, '^[0-9]{2} meses$'));
