@@ -12,7 +12,6 @@ ALTER TABLE Vendedores ADD CONSTRAINT chk_idVendedores CHECK (REGEXP_LIKE(idPers
 ALTER TABLE Compras ADD CONSTRAINT chk_idCompra CHECK (REGEXP_LIKE(idCompra, '^COM-[0-9]{5}$'));
 ALTER TABLE Compras ADD CONSTRAINT chk_idComprador_Compra CHECK (REGEXP_LIKE(idComprador, '^CDR-[0-9]{5}$'));
 ALTER TABLE Compras ADD CONSTRAINT chk_idProvedor_Compra CHECK (REGEXP_LIKE(idProveedor, '^PRO-[0-9]{5}$'));
-ALTER TABLE Compras ADD CONSTRAINT chk_idPieza_Compra CHECK (REGEXP_LIKE(idPieza, '^PIE-[0-9]{5}$'));
 ALTER TABLE Compras ADD CONSTRAINT chk_idPedido_Compra CHECK (REGEXP_LIKE(idPedido, '^PED-[0-9]{5}$'));
 ALTER TABLE Compras ADD CONSTRAINT chk_formaPago CHECK (formaPago IN ('transferencia', 'Deposito', 'efectivo'));
 ALTER TABLE Compras ADD CONSTRAINT chk_estadoPago CHECK (estadoPago IN ('Realizado', 'En tramite'));
