@@ -4,4 +4,4 @@ WHERE estadoPago = 'Realizado';
 
 CREATE VIEW PedidosEnviados AS
 SELECT * FROM Pedidos 
-WHERE estadoPedido = 'ENTREGADO';
+WHERE estadoPedido = 'retrasado';
