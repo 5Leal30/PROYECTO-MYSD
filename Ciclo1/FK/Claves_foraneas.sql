@@ -1,7 +1,6 @@
 ALTER TABLE Compras ADD CONSTRAINT fk_compras_proveedor FOREIGN KEY (idProveedor) REFERENCES Proveedores(idProveedor);
 ALTER TABLE Compras ADD CONSTRAINT fk_compras_comprador FOREIGN KEY (idComprador) REFERENCES Compradores(idPersona);
 ALTER TABLE Compras ADD CONSTRAINT fk_compras_pedido FOREIGN KEY (idPedido) REFERENCES Pedidos(idPedido);
-ALTER TABLE Compras ADD CONSTRAINT fk_compras_pieza FOREIGN KEY (idPieza) REFERENCES Piezas(idPieza);
 ALTER TABLE Automoviles ADD CONSTRAINT fk_automoviles_vendedor FOREIGN KEY (idVendedor) REFERENCES Vendedores(idPersona);
 ALTER TABLE Automoviles ADD CONSTRAINT fk_automoviles_importacion FOREIGN KEY (idImportacion) REFERENCES Importaciones(idImportacion);
 ALTER TABLE Automoviles ADD CONSTRAINT fk_automoviles_pieza FOREIGN KEY (idPieza) REFERENCES Piezas(idPieza);
